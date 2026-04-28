@@ -132,18 +132,18 @@ inject_config() {
     if grep -q "/src/my_translations" "$APP_YML"; then
         echo -e "${GREEN}配置已存在，跳過注入以保護 YAML 結構。${PLAIN}"
     else
-        # 注入 volumes
+        # 注入 volumes (完美排版，無多餘空行)
         sed -i '/volumes:/a \
-  - volume:\n\
-      host: /var/discourse/my_translations\n\
+  - volume:\
+      host: /var/discourse/my_translations\
       guest: /src/my_translations' "$APP_YML"
 
-        # 注入 hooks
+        # 注入 hooks (完美排版，無多餘空行)
         sed -i '/after_code:/a \
-    - exec:\n\
-        cd: $home\n\
-        cmd:\n\
-          - cp /src/my_translations/client.zh_TW.yml config/locales/client.zh_TW.yml 2>/dev/null || true\n\
+    - exec:\
+        cd: $home\
+        cmd:\
+          - cp /src/my_translations/client.zh_TW.yml config/locales/client.zh_TW.yml 2>/dev/null || true\
           - cp /src/my_translations/server.zh_TW.yml config/locales/server.zh_TW.yml 2>/dev/null || true' "$APP_YML"
         
         echo -e "${GREEN}✅ app.yml 掛載與覆蓋腳本注入成功！${PLAIN}"
@@ -239,7 +239,7 @@ while true; do
     
     echo -e "${BLUE}=================================================${PLAIN}"
     echo -e "  🚀 ${GREEN}Discourse TW (distw) 部署與翻譯管理面板${PLAIN}"
-    echo -e "      快捷指令: distw  |  版本: 1.0.5"
+    echo -e "      快捷指令: distw  |  版本: 1.0.0"
     echo -e "${BLUE}=================================================${PLAIN}"
     echo -e "${YELLOW} 1.${PLAIN} 初始化環境並下載 Discourse $ICON1"
     echo -e "${YELLOW} 2.${PLAIN} 📂 ${CYAN}從 GitHub 自動拉取最新翻譯檔${PLAIN} $ICON2"
