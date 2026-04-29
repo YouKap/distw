@@ -287,7 +287,7 @@ zh_TW:
       wrong_length:
         other: 長度錯誤（應為 %{count} 個字元）
       other_than: "必須不為 %{count}"
-      auth_overrides_username: "由於啟用了 `auth_overrides_username` 設定，因此需要在身份驗證提供者處更新使用者名稱。"
+      auth_overrides_username: "由於啟用了 `auth_overrides_username` 設定，因此需要在身分驗證提供者處更新使用者名稱。"
       required: "必須存在"
     template:
       body: ! "以下欄位存在問題："
@@ -395,11 +395,11 @@ zh_TW:
   not_logged_in: "您需要登入才能執行此操作。"
   not_found: "找不到請求的 URL 或資源。"
   invalid_access: "您沒有權限查看請求的資源。"
-  authenticator_not_found: "身份驗證方法不存在或已被停用。"
-  authenticator_no_connect: "此身份驗證提供者不允許連接到現有論壇帳號。"
+  authenticator_not_found: "身分驗證方法不存在或已被停用。"
+  authenticator_no_connect: "此身分驗證提供者不允許連接到現有論壇帳號。"
   invalid_api_credentials: "您沒有權限查看請求的資源。API 使用者名稱或者金鑰無效。"
-  provider_not_enabled: "您沒有權限查看請求的資源。身份驗證提供者未啟用。"
-  provider_not_found: "您沒有權限查看請求的資源。身份驗證提供者不存在。"
+  provider_not_enabled: "您沒有權限查看請求的資源。身分驗證提供者未啟用。"
+  provider_not_found: "您沒有權限查看請求的資源。身分驗證提供者不存在。"
   read_only_mode_enabled: "該網站正處於唯讀模式。互動功能已被停用。"
   invalid_grant_badge_reason_link: "徽章原因中不允許外部或無效的 Discourse 連結"
   email_template_cant_be_modified: "無法修改此電子郵件範本"
@@ -808,7 +808,7 @@ zh_TW:
       public_group_membership: "您加入/離開群組的頻率太快了。請等待 %{time_left}後再試。" 
       topics_per_day: "您已經達到每天允許的最大新主題數。您可以在 %{time_left}後建立更多新主題。" 
       pms_per_day: "您已經達到每天允許的最大訊息數。您可以在 %{time_left}後建立更多新訊息。" 
-      create_like: "哇！您一直在分享很多愛！今天您已經達到 24 小時點讚上限，不過，隨著您的信任層級提升，您將獲得更高的每日點讚上限。您可以在 %{time_left}後再次點讚。" 
+      create_like: "哇！您一直在分享很多愛！今天您已經達到 24 小時按讚上限，不過，隨著您的信任層級提升，您將獲得更高的每日按讚上限。您可以在 %{time_left}後再次按讚。" 
       create_bookmark: "您已經達到每日書籤的最大數量。您可以在 %{time_left}後建立更多書籤。" 
       edit_post: "您已經達到每日編輯的最大數量。您可以在 %{time_left}後提交更多編輯。" 
       live_post_counts: "您請求即時貼文數量的頻率太快了。請等待 %{time_left}後再試。" 
@@ -929,7 +929,7 @@ zh_TW:
       back_to: "返回 %{title}" 
   reviewable_score_types:
     needs_approval:
-      title: "需要審批" 
+      title: "需要審核" 
   post_action_types:
     off_topic:
       title: "偏離主題" 
@@ -967,9 +967,9 @@ zh_TW:
       description: "將此貼文加入書籤" 
       short_description: "將此貼文加入書籤" 
     like:
-      title: "點讚" 
-      description: "點讚此貼文" 
-      short_description: "點讚此貼文" 
+      title: "按讚" 
+      description: "按讚此貼文" 
+      short_description: "按讚此貼文" 
   draft:
     sequence_conflict_error:
       title: "草稿錯誤" 
@@ -996,10 +996,10 @@ zh_TW:
   webauthn:
     validation:
       invalid_type_error: "提供的 webauthn 類型無效。有效類型為 webauthn.get 和 webauthn.create。" 
-      challenge_mismatch_error: "提供的質詢與身份驗證伺服器產生的質詢不匹配。" 
-      invalid_origin_error: "身份驗證請求的來源與伺服器來源不匹配。" 
+      challenge_mismatch_error: "提供的質詢與身分驗證伺服器產生的質詢不匹配。" 
+      invalid_origin_error: "身分驗證請求的來源與伺服器來源不匹配。" 
       malformed_attestation_error: "解碼證明數據時出錯。" 
-      invalid_relying_party_id_error: "身份驗證請求的信賴方 ID 與伺服器信賴方 ID 不匹配。" 
+      invalid_relying_party_id_error: "身分驗證請求的信賴方 ID 與伺服器信賴方 ID 不匹配。" 
       user_presence_error: "使用者必須存在。" 
       user_verification_error: "需要使用者驗證。" 
       unsupported_public_key_algorithm_error: "伺服器不支援提供的公鑰算法。" 
@@ -1086,7 +1086,7 @@ zh_TW:
     deny: "取消" 
     read: "讀取" 
     read_write: "讀/寫" 
-    logged_in_as: "登入身份" 
+    logged_in_as: "登入身分" 
     permissions_header: '這將允許「%{application_name}」：' 
     redirect_warning: "授權會將您重新導向到" 
     instructions: '我們剛剛產生了一個新的使用者 API 金鑰供您與「%{application_name}」搭配使用，請將以下金鑰貼上到您的應用程式中：' 
@@ -1246,7 +1246,7 @@ zh_TW:
       title: "每日參與使用者"
       xaxis: "天"
       yaxis: "參與使用者"
-      description: "在過去一天內點讚或發過貼文的使用者數量。"
+      description: "在過去一天內按讚或發過貼文的使用者數量。"
     profile_views:
       title: "使用者個人資料瀏覽量"
       xaxis: "天"
@@ -1449,7 +1449,7 @@ zh_TW:
       title: "使用者存取（行動端）"
       xaxis: "天"
       yaxis: "存取次數"
-      description: "使用行動裝置存取的唯一身份登入使用者數。"
+      description: "使用行動裝置存取的唯一身分登入使用者數。"
     web_crawlers:
       title: "爬蟲使用者代理"
       labels:
@@ -1557,7 +1557,7 @@ zh_TW:
       qq_mail_smtp: "您的 SMTP 伺服器 (%{smtp_address}) 已知會導致 Discourse 發送重複電子郵件。QQ 郵件無法返回正確的確認資訊，導致 Discourse 重試已成功發送的郵件。<a href='https://github.com/discourse/discourse/blob/main/docs/INSTALL-email.md' target='_blank'>請參閱推薦的替代方案</a>。"
       bad_favicon_url: "網站圖示無法載入。檢查 <a href='%{base_path}/admin/site_settings'>網站設定</a> 中的網站圖示設定。"
       poll_pop3_timeout: "連接到 POP3 伺服器逾時。無法檢索收到的電子郵件。請檢查您的 <a href='%{base_path}/admin/site_settings/category/email'>POP3 設定</a>和服務供應商。"
-      poll_pop3_auth_error: "連接到 POP3 伺服器失敗，出現身份驗證錯誤。請檢查您的 <a href='%{base_path}/admin/site_settings/category/email'>POP3 設定</a>。"
+      poll_pop3_auth_error: "連接到 POP3 伺服器失敗，出現身分驗證錯誤。請檢查您的 <a href='%{base_path}/admin/site_settings/category/email'>POP3 設定</a>。"
       force_https: "您的網站正在使用 SSL。但是，`<a href='%{base_path}/admin/site_settings/category/all_results?filter=force_https'>force_https</a>` 尚未在您的網站設定中啟用。"
       out_of_date_themes: "以下佈景主題有可用更新：%{themes_list}"
       unreachable_themes: "我們無法檢查以下佈景主題的更新：%{themes_list}"
@@ -1673,8 +1673,8 @@ zh_TW:
     email_custom_headers: "自訂郵件標頭列表"
     email_subject: "標準電子郵件的可自訂主旨格式。請參閱 <a href='https://meta.discourse.org/t/customizing-specific-system-email-templates/88323' target='_blank'>https://meta.discourse.org/t/customizing-specific-system-email-templates/88323</a>"
     detailed_404: "向使用者提供有關他們無法存取特定主題的更多詳細資訊。注意：這不太安全，因為使用者會知道 URL 是否連結到有效主題。"
-    enforce_second_factor: "要求使用者啟用雙重驗證 (2FA)，然後才能存取 Discourse 使用者介面。此設定不影響 API 或 'DiscourseConnect provider' 身份驗證。如果啟用了 enforce_second_factor_on_external_auth，則使用者在設定 2FA 後將無法使用外部身份驗證供應商登入。"
-    enforce_second_factor_on_external_auth: "要求使用者始終使用雙重驗證 (2FA)。啟用後，如果使用者已啟用雙重驗證 (2FA)，將阻止他們使用外部身份驗證方法（例如社群登入）登入。停用後，使用者只需要在使用使用者名稱和密碼登入時確認雙重驗證 (2FA)。另請參閱 `enforce_second_factor` 設定。"
+    enforce_second_factor: "要求使用者啟用雙重驗證 (2FA)，然後才能存取 Discourse 使用者介面。此設定不影響 API 或 'DiscourseConnect provider' 身分驗證。如果啟用了 enforce_second_factor_on_external_auth，則使用者在設定 2FA 後將無法使用外部身分驗證供應商登入。"
+    enforce_second_factor_on_external_auth: "要求使用者始終使用雙重驗證 (2FA)。啟用後，如果使用者已啟用雙重驗證 (2FA)，將阻止他們使用外部身分驗證方法（例如社群登入）登入。停用後，使用者只需要在使用使用者名稱和密碼登入時確認雙重驗證 (2FA)。另請參閱 `enforce_second_factor` 設定。"
     force_https: "強制您的網站僅使用 HTTPS。警告：在您驗證 HTTPS 已完全設定並在任何地方都可以正常工作之前，請勿啟用此功能！您是否檢查過您的 CDN、所有社群登入以及任何外部標誌/依賴項，以確保它們都與 HTTPS 相容？"
     summary_score_threshold: "將貼文包含在「總結此主題」中所需的最低分數"
     summary_posts_required: "啟用「總結此主題」之前主題中的最少貼文數。對此設定的變更將在一週內追溯應用。"
@@ -1696,9 +1696,9 @@ zh_TW:
     cooldown_minutes_after_hiding_posts: "使用者在編輯通過社群檢舉隱藏的貼文之前必須等待的分鐘數"
     max_topics_in_first_day: "使用者在建立第一個貼文後 24 小時內允許建立的最大主題數"
     max_replies_in_first_day: "使用者在建立第一個貼文後 24 小時內允許建立的最大回覆數"
-    tl2_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl2（成員）每天的點讚限值"
-    tl3_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl3（一般）每天的點讚限值"
-    tl4_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl4（領導者）每天的點讚限值"
+    tl2_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl2（成員）每天的按讚限值"
+    tl3_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl3（一般）每天的按讚限值"
+    tl4_additional_likes_per_day_multiplier: "通過乘以此數字來提升 tl4（領導者）每天的按讚限值"
     tl2_additional_edits_per_day_multiplier: "通過乘以此數字來提升 tl2（成員）每天的編輯限值"
     tl3_additional_edits_per_day_multiplier: "通過乘以此數字來提升 tl3（一般）每天的編輯限值"
     tl4_additional_edits_per_day_multiplier: "通過乘以此數字來提升 tl4（領導者）每天的編輯限值"
@@ -1761,7 +1761,7 @@ zh_TW:
     post_menu: "配置預設貼文選單項目的公開範圍和順序。由外掛程式或佈景主題添加的其他選單項目將單獨管理，不會出現在此列表中。"
     post_menu_hidden_items: "除非點擊了擴展省略號否則預設在貼文選單中隱藏的選單項目。由外掛程式或佈景主題添加的附加選單項目將單獨管理，不會出現在此列表中。"
     share_links: "確定分享對話方塊中顯示的項目以及顯示順序。"
-    allow_username_in_share_links: "允許使用者名稱包含在分享連結中。這對於根據唯一身份訪客獎勵徽章很有用。"
+    allow_username_in_share_links: "允許使用者名稱包含在分享連結中。這對於根據唯一身分訪客獎勵徽章很有用。"
     site_contact_username: "用於發送所有自動訊息的有效管理人員使用者名稱。如果留空，將使用預設系統帳號。"
     site_contact_group_name: "受邀接收所有自動發送的私訊的群組的有效名稱。"
     send_welcome_message: "向所有新使用者發送帶有快速入門指南的歡迎訊息。"
@@ -1882,13 +1882,13 @@ zh_TW:
     verbose_localization: "在 UI 上顯示詳細的在地化提示"
     previous_visit_timeout_hours: "在我們將其視為「上一次」存取之前，存取持續的時間，以小時為單位"
     top_topics_formula_log_views_multiplier: "熱門主題中對數瀏覽因子 (n) 值的公式：`log(views_count) * (n) + op_likes_count * 0.5 + LEAST(likes_count / posts_count, 3) + 10 + log(posts_count)`"
-    top_topics_formula_first_post_likes_multiplier: "熱門主題中第一個貼文點讚因子 (n) 值的公式：`log(views_count) * 2 + op_likes_count * (n) + LEAST(likes_count / posts_count, 3) + 10 + log(posts_count)`"
-    top_topics_formula_least_likes_per_post_multiplier: "熱門主題中每個貼文的最少點讚因子 (n) 值的公式：`log(views_count) * 2 + op_likes_count * 0.5 + LEAST(likes_count / posts_count, (n)) + 10 + log(posts_count)`"
+    top_topics_formula_first_post_likes_multiplier: "熱門主題中第一個貼文按讚因子 (n) 值的公式：`log(views_count) * 2 + op_likes_count * (n) + LEAST(likes_count / posts_count, 3) + 10 + log(posts_count)`"
+    top_topics_formula_least_likes_per_post_multiplier: "熱門主題中每個貼文的最少按讚因子 (n) 值的公式：`log(views_count) * 2 + op_likes_count * 0.5 + LEAST(likes_count / posts_count, (n)) + 10 + log(posts_count)`"
     enable_safe_mode: "允許使用者進入安全模式以偵錯外掛程式。"
     rate_limit_create_topic: "建立主題後，使用者必須等待 (n) 秒才能建立另一個主題。"
     rate_limit_create_post: "發文後，使用者必須等待 (n) 秒才能建立另一個貼文。"
     rate_limit_new_user_create_post: "發文後，新使用者必須等待 (n) 秒才能建立另一個貼文。"
-    max_likes_per_day: "每個使用者每天的最大點讚次數。"
+    max_likes_per_day: "每個使用者每天的最大按讚次數。"
     max_flags_per_day: "每個使用者每天的最大檢舉次數。"
     max_bookmarks_per_day: "每個使用者每天的最大書籤數。"
     max_edits_per_day: "每個使用者每天的最大編輯次數。"
@@ -2029,7 +2029,7 @@ zh_TW:
     max_image_megapixels: "圖片允許的最大百萬像素數。具有更高百萬像素數的圖片將被拒絕。"
     title_prettify: "防止常見的標題拼寫錯誤和錯誤，包括全部大寫、第一個字元小寫、多個 ! 和 ?、結尾出現額外的 . 等。"
     title_remove_extraneous_space: "移除末尾標點符號前面的前導空格。"
-    automatic_topic_heat_values: '基於網站活動自動更新「主題瀏覽熱度」和「主題貼文點讚熱度」設定。'
+    automatic_topic_heat_values: '基於網站活動自動更新「主題瀏覽熱度」和「主題貼文按讚熱度」設定。'
     topic_views_heat_low: "獲得此數量的瀏覽後，瀏覽次數欄位將被稍稍高亮顯示。"
     topic_views_heat_medium: "獲得此數量的瀏覽後，瀏覽次數欄位將被適度高亮顯示。"
     topic_views_heat_high: "獲得此數量的瀏覽後，瀏覽次數欄位將被顯著高亮顯示。"
@@ -2039,9 +2039,9 @@ zh_TW:
     history_hours_low: "在此小時數內編輯過的貼文會略微高亮顯示編輯指示器"
     history_hours_medium: "在此小時數內編輯過的貼文會適度高亮顯示編輯指示器。"
     history_hours_high: "在此小時數內編輯過的貼文會強烈高亮顯示編輯指示器。"
-    topic_post_like_heat_low: "在點讚:貼文比例超過此值後，貼文計數欄位會被略微高亮顯示。"
-    topic_post_like_heat_medium: "在點讚:貼文比例超過此值後，貼文計數欄位會被適度高亮顯示。"
-    topic_post_like_heat_high: "在點讚:貼文比例超過此值後，貼文計數欄位會被強烈高亮顯示。"
+    topic_post_like_heat_low: "在按讚:貼文比例超過此值後，貼文計數欄位會被略微高亮顯示。"
+    topic_post_like_heat_medium: "在按讚:貼文比例超過此值後，貼文計數欄位會被適度高亮顯示。"
+    topic_post_like_heat_high: "在按讚:貼文比例超過此值後，貼文計數欄位會被強烈高亮顯示。"
     faq_url: "如果您想使用在別處託管的常見問題解答，請在此處提供完整 URL。"
     tos_url: "如果您想使用在別處託管的《服務條款》文件，請在此處提供完整 URL。"
     privacy_policy_url: "如果您想使用在別處託管的《隱私權政策》文件，請在此處提供完整 URL。"
@@ -2060,7 +2060,7 @@ zh_TW:
     num_flaggers_to_close_topic: "自動暫停主題以進行干預所需的最少唯一檢舉次數"
     num_hours_to_close_topic: "暫停主題以進行干預的小時數。"
     auto_respond_to_flag_actions: "處理檢舉時啟用自動回覆。"
-    min_first_post_typing_time: "使用者在第一次發文時必須輸入的最短時間，如果未達到門檻，貼文將自動進入需要審批佇列。設定為 0 將停用（不推薦）"
+    min_first_post_typing_time: "使用者在第一次發文時必須輸入的最短時間，如果未達到門檻，貼文將自動進入需要審核佇列。設定為 0 將停用（不推薦）"
     fast_typing_threshold: "使用者在第一次發文時必須輸入的最短時間。如果未達到門檻，貼文將自動進入審核佇列。最短時間為 1 秒，標準時間為 3 秒，最長時間為 5 秒。"
     auto_silence_fast_typers_on_first_post: "自動禁言未達到 `fast typing threshold` 的使用者"
     auto_silence_fast_typers_max_trust_level: "自動禁言輸入過快使用者的最高信任層級"
@@ -2171,7 +2171,7 @@ zh_TW:
     enable_category_group_moderation: "允許群組審核特定類別的內容"
     group_in_subject: "在電子郵件主旨中將 %%{optional_pm} 設定為私訊中第一個群組的名稱，請參閱：<a href='https://meta.discourse.org/t/customize-specific-email-templates/88323' target='_blank'>自訂標準電子郵件的主旨格式</a>"
     allow_anonymous_mode: "啟用可供使用者切換到匿名發文模式的選項。啟動後，使用者在網站上建立貼文或主題時可以選擇隱藏身分。另請參閱 `allow anonymous likes`。"
-    allow_likes_in_anonymous_mode: "啟用此設定，允許匿名瀏覽您的站台的使用者為貼文點讚。啟動後，使用者在為貼文或主題點讚時可以選擇隱藏其身分。此設定需要先啟用 `allow anonymous mode`。"
+    allow_likes_in_anonymous_mode: "啟用此設定，允許匿名瀏覽您的站台的使用者為貼文按讚。啟動後，使用者在為貼文或主題按讚時可以選擇隱藏其身分。此設定需要先啟用 `allow anonymous mode`。"
     anonymous_posting_allowed_groups: "可以啟用匿名發文的群組。此設定需要啟用 `allow anonymous mode` 設定。"
     anonymous_account_duration_minutes: "為了保護匿名性，每 N 分鐘為每個使用者建立一個新的匿名帳號。範例：如果設定為 600，則在距離上次發文 600 分鐘且使用者切換到匿名時，將建立一個新的匿名帳號。"
     hide_user_profiles_from_public: "停用匿名使用者的使用者小卡和使用者個人資料。使用者目錄中仍將提供彙整的統計數據。"
@@ -2257,7 +2257,7 @@ zh_TW:
     emoji_autocomplete_min_chars: "觸發自動填寫表情符號彈出視窗所需的最少字元數"
     enable_inline_emoji_translation: "啟用內聯表情符號的翻譯（之前沒有任何空格或標點符號）"
     emoji_deny_list: "這些表情符號將無法在選單或短代碼中使用。"
-    approve_post_count: "新使用者或基本使用者必須接受審批的貼文數量"
+    approve_post_count: "新使用者或基本使用者必須接受審核的貼文數量"
     approve_unless_allowed_groups: "不屬於這些群組的使用者所發布的貼文必須經過批准。管理員和板主發布的貼文始終會被批准。"
     approve_new_topics_unless_allowed_groups: "不屬於這些群組的使用者所發布的主題必須經過批准。管理員和板主發布的主題始終會被批准。"
     approve_unless_staged: "暫存使用者建立的新主題和貼文必須獲得批准"
@@ -2302,7 +2302,7 @@ zh_TW:
     default_other_enable_markdown_monospace_font: "預設在輸入框的 Markdown 模式下使用等寬字體。"
     default_other_dynamic_favicon: "在瀏覽器圖示上預設顯示新的/更新的主題計數。"
     default_other_skip_new_user_tips: "跳過新使用者入門提示和徽章。"
-    default_other_like_notification_frequency: "設定使用者預設接收點讚通知的頻率。未自訂通知設定的使用者將遵循此預設行為。"
+    default_other_like_notification_frequency: "設定使用者預設接收按讚通知的頻率。未自訂通知設定的使用者將遵循此預設行為。"
     default_topics_automatic_unpin: "當使用者到達底部時預設自動取消置頂主題。"
     default_categories_watching: "預設關注的類別清單。"
     default_categories_tracking: "預設追蹤的類別清單。"
@@ -2465,7 +2465,7 @@ zh_TW:
       pop3_polling_host_is_empty: "在啟用 POP3 輪詢前，您必須先設定 'pop3 polling host'。"
       pop3_polling_username_is_empty: "在啟用 POP3 輪詢前，您必須先設定 'pop3 polling username'。"
       pop3_polling_password_is_empty: "在啟用 POP3 輪詢前，您必須先設定 'pop3 polling password'。"
-      pop3_polling_authentication_failed: "POP3 身份驗證失敗。請驗證您的 pop3 憑據。"
+      pop3_polling_authentication_failed: "POP3 身分驗證失敗。請驗證您的 pop3 憑據。"
       reply_by_email_address_is_empty: "在啟用透過電子郵件回覆之前，您必須先設定 'reply by email address'。"
       email_polling_disabled: "您必須先啟用手動、POP3 輪詢或啟用自訂郵件輪詢器，然後才能透過電子郵件進行回覆。"
       user_locale_not_enabled: "在啟用此設定之前，您必須先啟用 'allow user locale'。"
@@ -2500,7 +2500,7 @@ zh_TW:
       linkedin_oidc_credentials: "啟用此設定前，必須先配置 LinkedIn OIDC 憑據 ('linkedin_oidc_client_id' 和 'linkedin_oidc_client_secret')。"
       search_tokenize_chinese_enabled: "在啟用此設定之前，您必須停用 'search_tokenize_chinese'。"
       search_tokenize_japanese_enabled: "在啟用此設定之前，您必須停用 'search_tokenize_japanese'。"
-      discourse_connect_cannot_be_enabled_if_second_factor_enforced: "如果強制執行雙重身份驗證，則無法啟用 DiscourseConnect。"
+      discourse_connect_cannot_be_enabled_if_second_factor_enforced: "如果強制執行雙重身分驗證，則無法啟用 DiscourseConnect。"
       delete_rejected_email_after_days: "此設定不能設定為低於 delete_email_logs_after_days 設定或大於 %{max}"
       invalid_uncategorized_category_setting: '如果「允許未分類主題」設定未啟用，則無法選擇「未分類」類別。'
       invalid_search_ranking_weights: "該值對於 search_ranking_weights 網站設定無效。範例：'{0.1,0.2,0.3,1.0}'。注意，每個權重的最大值為 1.0。"
@@ -2620,7 +2620,7 @@ zh_TW:
   discourse_connect:
     login_error: "登入錯誤"
     not_found: "找不到您的帳號。請聯繫網站管理員。"
-    account_not_approved: "您的帳號正在等待審批。當您獲得批准時，您將收到一封電子郵件通知。"
+    account_not_approved: "您的帳號正在等待審核。當您獲得批准時，您將收到一封電子郵件通知。"
     unknown_error: "您的帳號有問題。請聯繫網站管理員。"
     timeout_expired: "帳號登入逾時，請嘗試重新登入。"
     no_email: "沒有提供電子郵件地址。請聯繫網站管理員。"
@@ -2631,9 +2631,9 @@ zh_TW:
     invalid_parameter_value: "由於 `%{param}` 參數值無效，身分驗證失敗。請聯繫網站管理員解決此問題。"
     payload_parse_error: "身分驗證失敗（有效負載不是有效的 Base64）。請聯繫網站的管理員。"
     signature_error: "身分驗證失敗（簽章不正確）。請聯繫該網站的管理員。"
-  original_poster: "原始發帖人"
-  most_recent_poster: "最新發帖人"
-  frequent_poster: "頻繁發帖人"
+  original_poster: "原始發文者"
+  most_recent_poster: "最新發文者"
+  frequent_poster: "頻繁發文者"
   poster_description_joiner: "、"
   redirected_to_top_reasons:
     new_user: "歡迎來到我們的社群！這些是最近最熱門的主題。"
@@ -2695,12 +2695,12 @@ zh_TW:
     auto_deleted_by_timer: "已由定時器自動刪除。"
     auto_deleted_by_merge: "透過合併自動刪除。"
   login:
-    invalid_second_factor_method: "所選雙重身份驗證方法無效。"
-    not_enabled_second_factor_method: "您的帳號未啟用所選雙重身份驗證方法。"
-    security_key_description: "當您準備好實體安全金鑰後，請按下面的「使用安全金鑰進行身份驗證」按鈕。"
+    invalid_second_factor_method: "所選雙重身分驗證方法無效。"
+    not_enabled_second_factor_method: "您的帳號未啟用所選雙重身分驗證方法。"
+    security_key_description: "當您準備好實體安全金鑰後，請按下面的「使用安全金鑰進行身分驗證」按鈕。"
     security_key_alternative: "嘗試另一種方式"
-    security_key_authenticate: "使用安全金鑰進行身份驗證"
-    security_key_not_allowed_error: "安全金鑰身份驗證過程逾時或被取消。"
+    security_key_authenticate: "使用安全金鑰進行身分驗證"
+    security_key_not_allowed_error: "安全金鑰身分驗證過程逾時或被取消。"
     security_key_no_matching_credential_error: "在提供的安全金鑰中找不到匹配的憑據。"
     security_key_support_missing_error: "您目前的裝置或瀏覽器不支援使用安全金鑰。請使用其他方法。"
     security_key_invalid: "驗證安全金鑰時出錯。"
@@ -2717,7 +2717,7 @@ zh_TW:
     reset_not_allowed_from_ip_address: "您無法從該 IP 地址請求密碼重設。"
     suspended: "您在 %{date}之前無法登入。"
     suspended_with_reason: "帳號已被封禁至 %{date}：%{reason}"
-    suspended_with_reason_forever: "帳號被封禁：%{reason}"
+    suspended_with_reason_forever: "帳號遭停權：%{reason}"
     errors: "%{errors}"
     not_available: "不可用，試試 %{suggestion}？"
     something_already_taken: "出了點問題，可能該使用者名稱或電子郵件地址已被註冊，試試點擊忘記密碼連結。"
@@ -2741,28 +2741,28 @@ zh_TW:
     auth_complete: "身分驗證完成。"
     click_to_continue: "點擊此處繼續。"
     already_logged_in: "抱歉！此邀請面向目前沒有帳號的新使用者。"
-    second_factor_title: "雙重身份驗證"
-    second_factor_description: "請輸入應用中的必需身份驗證代碼："
+    second_factor_title: "雙重身分驗證"
+    second_factor_description: "請輸入應用中的必需身分驗證代碼："
     second_factor_backup_description: "請輸入您的備份代碼之一："
     second_factor_backup_title: "雙重備份代碼"
     invalid_second_factor_code: "驗證碼無效。每個代碼只能使用一次。"
     invalid_security_key: "無效的安全金鑰。"
     missing_second_factor_name: "請提供一個名稱。"
     missing_second_factor_code: "請提供一個代碼。"
-    too_many_authenticators: "抱歉，身份驗證器不能超過 50 個。請移除一個現有的身份驗證器並重試。"
+    too_many_authenticators: "抱歉，身分驗證器不能超過 50 個。請移除一個現有的身分驗證器並重試。"
     too_many_security_keys: "抱歉，安全金鑰不能超過 50 個。請移除一個現有金鑰並重試。"
     second_factor_toggle:
-      totp: "改用身份驗證器應用或安全金鑰"
+      totp: "改用身分驗證器應用或安全金鑰"
       backup_code: "改用備份代碼"
   second_factor_auth:
-    challenge_not_found: "在當前工作階段中找不到雙重身份驗證。"
-    challenge_expired: "自雙重身份驗證開始以來已經過去太多時間，它不再有效。請再試一次。"
-    challenge_not_completed: "您尚未完成執行此操作的雙重身份驗證。請完成雙重身份驗證，然後重試。"
+    challenge_not_found: "在當前工作階段中找不到雙重身分驗證。"
+    challenge_expired: "自雙重身分驗證開始以來已經過去太多時間，它不再有效。請再試一次。"
+    challenge_not_completed: "您尚未完成執行此操作的雙重身分驗證。請完成雙重身分驗證，然後重試。"
     actions:
       grant_admin:
-        description: "對於額外的安全措施，您需要在 %{username} 被授予管理員存取權限之前確認您的雙重身份驗證。"
+        description: "對於額外的安全措施，您需要在 %{username} 被授予管理員存取權限之前確認您的雙重身分驗證。"
       discourse_connect_provider:
-        description: "%{hostname} 已要求您確認您的雙重身份驗證。確認雙重身份驗證後，您將被重新導向回該網站。"
+        description: "%{hostname} 已要求您確認您的雙重身分驗證。確認雙重身分驗證後，您將被重新導向回該網站。"
   admin:
     email:
       sent_test: "已發送！"
@@ -2819,7 +2819,7 @@ zh_TW:
       reviewable_reject_auto: "自動處理排隊的可審核條目"
       reviewable_reject: "可審核使用者被拒絕"
       reviewable_details_scrubbed: "使用者詳細資訊被 %{staff} 清除\n\n原因：%{reason}\n\n時間戳：%{timestamp}"
-    email_in_spam_header: "使用者的第一封電子郵件已被舉報為垃圾郵件"
+    email_in_spam_header: "使用者的第一封電子郵件已被檢舉為垃圾郵件"
     already_silenced: "使用者已在 %{time_ago}被 %{staff} 禁言。"
     already_suspended: "使用者已在 %{time_ago}被 %{staff} 封禁。"
     cannot_delete_has_posts:
@@ -2981,18 +2981,18 @@ zh_TW:
 
       %{notes}
   flag_reasons:
-    off_topic: "您的貼文被舉報為**偏離主題**：鑑於主題標題和第一個貼文，社群認為它不適合該主題。"
-    inappropriate: "您的貼文被舉報為**不當言論**：社群認為它具有冒犯性、侮辱性、屬於仇恨行為或違反了[我們的社群準則](%{base_path}/guidelines)。"
-    illegal: "您的貼文被舉報為**非法**：社群認為這可能觸犯了法律。"
-    spam: "您的貼文被舉報為**垃圾訊息**：社群認為它是廣告，像是在過度地推廣著什麼，而不是預期中與主題有關的內容。"
-    notify_moderators: "您的貼文被舉報為**需要板主注意**：社群認為貼文需要管理人員手動干預。"
-    needs_approval: "您的貼文被標記為**需要審批**：它已自動加入審核佇列，管理人員將確保它滿足[我們的社群準則](%{base_path}/guidelines)。"
+    off_topic: "您的貼文被檢舉為**偏離主題**：鑑於主題標題和第一個貼文，社群認為它不適合該主題。"
+    inappropriate: "您的貼文被檢舉為**不當言論**：社群認為它具有冒犯性、侮辱性、屬於仇恨行為或違反了[我們的社群準則](%{base_path}/guidelines)。"
+    illegal: "您的貼文被檢舉為**非法**：社群認為這可能觸犯了法律。"
+    spam: "您的貼文被檢舉為**垃圾訊息**：社群認為它是廣告，像是在過度地推廣著什麼，而不是預期中與主題有關的內容。"
+    notify_moderators: "您的貼文被檢舉為**需要板主注意**：社群認為貼文需要管理人員手動干預。"
+    needs_approval: "您的貼文被標記為**需要審核**：它已自動加入審核佇列，管理人員將確保它滿足[我們的社群準則](%{base_path}/guidelines)。"
     responder:
-      off_topic: "該貼文被舉報為**偏離主題**：鑑於主題標題和第一個貼文，社群認為它不適合該主題。"
-      inappropriate: "這個貼文被舉報為**不當言論**：社群認為它具有冒犯性、侮辱性、屬於仇恨行為或違反了[我們的社群準則](%{base_path}/guidelines)。"
-      spam: "該貼文被舉報為**垃圾訊息**：社群認為這是一個廣告，本質上是過度宣傳的東西，而不是像預期的那樣有用或與主題相關。"
-      notify_moderators: "該貼文被舉報為**需要板主注意**：社群認為貼文需要管理人員手動干預。"
-      needs_approval: "該貼文被標記為**需要審批**：它已自動加入審核佇列，管理人員將確保它滿足[我們的社群準則](%{base_path}/guidelines)。"
+      off_topic: "該貼文被檢舉為**偏離主題**：鑑於主題標題和第一個貼文，社群認為它不適合該主題。"
+      inappropriate: "這個貼文被檢舉為**不當言論**：社群認為它具有冒犯性、侮辱性、屬於仇恨行為或違反了[我們的社群準則](%{base_path}/guidelines)。"
+      spam: "該貼文被檢舉為**垃圾訊息**：社群認為這是一個廣告，本質上是過度宣傳的東西，而不是像預期的那樣有用或與主題相關。"
+      notify_moderators: "該貼文被檢舉為**需要板主注意**：社群認為貼文需要管理人員手動干預。"
+      needs_approval: "該貼文被標記為**需要審核**：它已自動加入審核佇列，管理人員將確保它滿足[我們的社群準則](%{base_path}/guidelines)。"
   flags_dispositions:
     agreed: "感謝通知我們。我們認為這是個問題，正在進行調查。"
     agreed_and_deleted: "感謝通知我們。我們認為這是個問題，並且已將該貼文移除。"
@@ -3424,7 +3424,7 @@ zh_TW:
       text_body_template: |
         抱歉，但是您向 %{destination}（名為 %{former_title}）發送的電子郵件未成功。
 
-        為了促進更深入的對話，不允許進行非常簡短的回覆。您能回覆至少 %{count} 個字元嗎？或者，您也可以回覆「+1」，透過電子郵件來點讚貼文。
+        為了促進更深入的對話，不允許進行非常簡短的回覆。您能回覆至少 %{count} 個字元嗎？或者，您也可以回覆「+1」，透過電子郵件來按讚貼文。
     email_reject_invalid_post_action:
       title: "電子郵件被拒：無效的貼文操作"
       subject_template: "[%{email_prefix}] 電子郵件問題 - 無效的貼文操作"
@@ -4395,7 +4395,7 @@ zh_TW:
       * 不要中途改變主題。
       * 不要在您的貼文上簽名 &mdash; 每個貼文都附有您的個人資料。
 
-      不要發布「+1」或「同意」，而要使用「點讚」按鈕。不要從完全不同的方向討論現有主題，而要使用「作為連結主題回覆」。
+      不要發布「+1」或「同意」，而要使用「按讚」按鈕。不要從完全不同的方向討論現有主題，而要使用「作為連結主題回覆」。
 
       <a name="stealing"></a>
 
@@ -4773,7 +4773,7 @@ zh_TW:
       name: 第一個讚
       description: 讚了一個貼文
       long_description: |
-        當您首次使用 :heart: 按鈕讚一個貼文時，將授予此徽章。點讚貼文是讓社群成員知道他們所發布的內容有趣、實用、炫酷的絕佳方法。分享愛！
+        當您首次使用 :heart: 按鈕讚一個貼文時，將授予此徽章。按讚貼文是讓社群成員知道他們所發布的內容有趣、實用、炫酷的絕佳方法。分享愛！
     first_flag:
       name: 首次檢舉
       description: 檢舉了一個貼文
@@ -4853,7 +4853,7 @@ zh_TW:
       name: 出於愛
       description: 一天內上限送出 %{max_likes_per_day} 個讚
       long_description: |
-        當您一天內上限送出 %{max_likes_per_day} 個讚時，將授予此徽章。記得撥冗點讚您喜歡和欣賞的貼文，這會鼓勵您的社群成員在未來創造更多精彩討論。
+        當您一天內上限送出 %{max_likes_per_day} 個讚時，將授予此徽章。記得撥冗按讚您喜歡和欣賞的貼文，這會鼓勵您的社群成員在未來創造更多精彩討論。
     higher_love:
       name: 更多的愛
       description: 一天內上限送出 %{max_likes_per_day} 個讚，並達到 5 次
