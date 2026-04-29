@@ -207,7 +207,7 @@ zh_TW:
   emails:
     incoming:
       default_subject: "此主題需要一個標題"
-      show_trimmed_content: "顯示修剪後的內容"
+      show_trimmed_content: "顯示已裁切內容"
       maximum_staged_user_per_email_reached: "已達到每個電子郵件可以建立的暫存使用者上限。"
       no_subject: "（無主旨）"
       no_body: "（無正文）"
