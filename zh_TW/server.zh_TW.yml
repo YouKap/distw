@@ -46,7 +46,7 @@ zh_TW:
   sign_up: "註冊"
   log_in: "登入"
   submit: "送出"
-  purge_reason: "作為已棄用、停用的帳號自動刪除"
+  purge_reason: "因帳號已廢棄或停用而自動刪除"
   disable_remote_images_download_reason: "由於磁碟空間不足，遠端圖片下載功能已停用。"
   anonymous: "匿名"
   remove_posts_deleted_by_author: "被作者刪除"
