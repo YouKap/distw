@@ -678,7 +678,7 @@ zh_TW:
       order_by: "排序依據" 
       date_filter: "發佈時間介於" 
       in_reply_to: "回覆給" 
-      filtered_flagged_by: "舉報者" 
+      filtered_flagged_by: "檢舉者" 
       unknown:
         title:
           other: "您有來自已停用外掛程式的待審核佇列項目：" 
@@ -699,16 +699,16 @@ zh_TW:
         score_to_hide: "隱藏貼文的觸發分數" 
         take_action_bonus:
           name: "採取行動" 
-          title: "當工作人員選擇採取行動時，舉報會獲得加分。" 
+          title: "當工作人員選擇採取行動時，檢舉會獲得加分。" 
         user_accuracy_bonus:
           name: "使用者準確性" 
-          title: "所提交的舉報一直都獲得同意的使用者將獲得加分。" 
+          title: "所提交的檢舉一直都獲得同意的使用者將獲得加分。" 
         trust_level_bonus:
           name: "信任等級" 
-          title: "由較高信任等級的使用者建立的舉報具有較高的分數。" 
+          title: "由較高信任等級的使用者建立的檢舉具有較高的分數。" 
         type_bonus:
           name: "獎勵加分" 
-          title: "某些舉報類型可由工作人員指定加分，以使其具有更高的優先順序。" 
+          title: "某些檢舉類型可由工作人員指定加分，以使其具有更高的優先順序。" 
       revise_and_reject_post:
         title: "修訂" 
         reason: "原因" 
@@ -746,9 +746,9 @@ zh_TW:
       title: "審核" 
       topic: "主題：" 
       filtered_topic: "您已篩選到一個主題下的可審核內容。" 
-      filtered_user: "被舉報使用者" 
+      filtered_user: "被檢舉使用者" 
       filtered_reviewed_by: "審核人" 
-      filtered_claimed_by: "舉報申領人" 
+      filtered_claimed_by: "檢舉申領人" 
       show_all_topics: "顯示所有主題" 
       deleted_post: "（貼文已刪除）" 
       deleted_user: "（使用者已刪除）" 
@@ -774,7 +774,7 @@ zh_TW:
           cancel_button: "取消" 
       user_percentage:
         summary:
-          other: "%{agreed}，%{disagreed}，%{ignored}（共 %{count} 個舉報）" 
+          other: "%{agreed}，%{disagreed}，%{ignored}（共 %{count} 個檢舉）" 
         agreed:
           other: "%{count}% 同意" 
         disagreed:
@@ -784,7 +784,7 @@ zh_TW:
       topics:
         topic: "主題" 
         reviewable_count: "計數" 
-        reported_by: "舉報人" 
+        reported_by: "檢舉人" 
         deleted: "[主題已刪除]" 
         original: "（原主題）" 
         details: "詳細資訊" 
@@ -824,12 +824,12 @@ zh_TW:
       conversation:
         view_full: "查看完整對話" 
       scores:
-        about: "此分數是根據舉報人的信任等級、該使用者以往舉報的準確性以及被舉報項目的優先順序計算得出的。" 
+        about: "此分數是根據檢舉人的信任等級、該使用者以往檢舉的準確性以及被檢舉項目的優先順序計算得出的。" 
         score: "分數" 
-        date: "舉報日期" 
+        date: "檢舉日期" 
         type: "原因" 
         status: "狀態" 
-        submitted_by: "舉報人" 
+        submitted_by: "檢舉人" 
         reviewed_by: "審核人" 
         reviewed_timestamp: "審核日期" 
       statuses:
@@ -838,7 +838,7 @@ zh_TW:
         approved:
           title: "已批准" 
         approved_flag:
-          title: "舉報已批准" 
+          title: "檢舉已批准" 
         approved_user:
           title: "使用者已批准" 
         approved_post:
@@ -846,13 +846,13 @@ zh_TW:
         rejected:
           title: "已拒絕" 
         rejected_flag:
-          title: "舉報被拒絕" 
+          title: "檢舉被拒絕" 
         rejected_user:
           title: "使用者被拒絕" 
         rejected_post:
           title: "貼文被拒絕" 
         ignored:
-          title: "舉報已忽略" 
+          title: "檢舉已忽略" 
         deleted:
           title: "主題或貼文已刪除" 
         reviewed:
@@ -869,8 +869,8 @@ zh_TW:
         approve_topic: "是否批准此主題？" 
       types:
         reviewable_flagged_post:
-          title: "被舉報的貼文" 
-          flagged_by: "舉報人" 
+          title: "被檢舉的貼文" 
+          flagged_by: "檢舉人" 
           noun: "貼文" 
         reviewable_queued_topic:
           title: "已加入佇列的主題" 
@@ -891,7 +891,7 @@ zh_TW:
           title: "AI 標記的貼文" 
           noun: "貼文" 
         reviewable_post_voting_comment:
-          title: "被舉報的評論" 
+          title: "被檢舉的評論" 
           noun: "評論" 
       flagged_as: "被標記為" 
       post_flagged_as: "貼文被標記為" 
@@ -907,8 +907,8 @@ zh_TW:
         target_created_by: "貼文由 %{username} 建立 · %{relativeDate}" 
         target_deleted: "貼文已刪除" 
         target_deleted_by: "貼文已被 %{username} 刪除 · %{relativeDate}" 
-        flagged: "被舉報" 
-        flagged_as_by: "被 %{username} 舉報為 %{flagReason} · %{relativeDate}" 
+        flagged: "被檢舉" 
+        flagged_as_by: "被 %{username} 檢舉為 %{flagReason} · %{relativeDate}" 
         claimed: "已認領" 
         claimed_by: "由 %{username} 認領 · %{relativeDate}" 
         unclaimed_by: "已被 %{username} 取消認領 · %{relativeDate}" 
@@ -930,7 +930,7 @@ zh_TW:
       topic_label: "主題" 
       queued_user: "已加入佇列的使用者" 
       posted_in: "發表於" 
-      flagged_user: "被舉報使用者" 
+      flagged_user: "被檢舉使用者" 
       review_user: "使用者" 
       need_help: "需要幫助？" 
       copy_link: "複製連結" 
@@ -939,12 +939,12 @@ zh_TW:
       view_source: "查看來源" 
       insights:
         title: "洞察" 
-        flag_volume: "舉報量" 
+        flag_volume: "檢舉量" 
         flagged_by_users:
-          other: "由 %{count} 位不重複使用者舉報" 
+          other: "由 %{count} 位不重複使用者檢舉" 
         similar_posts: "過去的違規" 
         flagged_in_timeframe:
-          other: "%{count} 個已確認舉報" 
+          other: "%{count} 個已確認檢舉" 
         user_activity: "使用者資訊" 
         activities:
           joined_on: "加入日期：%{joinDate}" 
@@ -963,7 +963,7 @@ zh_TW:
       help:
         community_moderation_guide: "本社群的審核指南" 
         moderation_guide: "Discourse 審核指南" 
-        flag_priorities: "管理使用者聲譽和舉報優先順序" 
+        flag_priorities: "管理使用者聲譽和檢舉優先順序" 
         spam_detection: "垃圾訊息偵測" 
       approval:
         title: "貼文需要審核" 
@@ -1622,9 +1622,9 @@ zh_TW:
       staged: "暫存"
       staff_counters:
         flags_given:
-          other: '<span class="%{className}">%{count}</span> 個有用的舉報'
+          other: '<span class="%{className}">%{count}</span> 個有用的檢舉'
         flags:
-          other: '<span class="%{className}">%{count}</span> 個舉報'
+          other: '<span class="%{className}">%{count}</span> 個檢舉'
         deleted_posts:
           other: '<span class="%{className}">%{count}</span> 則刪除的貼文'
         silencings:
@@ -3730,9 +3730,9 @@ zh_TW:
         title: "列印"
         help: "打開此主題易於列印的版本"
       flag_topic:
-        title: "舉報"
-        help: "以私密方式舉報此主題以引起注意，或傳送一個關於它的個人訊息"
-        success_message: "您已成功舉報此主題。"
+        title: "檢舉"
+        help: "以私密方式檢舉此主題以引起注意，或傳送一個關於它的個人訊息"
+        success_message: "您已成功檢舉此主題。"
       make_public:
         title: "轉換為公開主題"
         choose_category: "請為公開主題選擇類別："
@@ -4038,9 +4038,9 @@ zh_TW:
         edit: "編輯此貼文"
         edit_action: "編輯"
         edit_anonymous: "抱歉，您需要登入才能編輯此貼文。"
-        flag_action: "舉報"
-        flag: "以私密方式舉報此貼文以引起注意，或傳送一個關於它的個人訊息"
-        anonymous_flag: "向工作人員傳送電子郵件以舉報此貼文"
+        flag_action: "檢舉"
+        flag: "以私密方式檢舉此貼文以引起注意，或傳送一個關於它的個人訊息"
+        anonymous_flag: "向工作人員傳送電子郵件以檢舉此貼文"
         delete_action: "刪除貼文"
         delete: "刪除此貼文"
         undelete_action: "取消刪除貼文"
@@ -4075,7 +4075,7 @@ zh_TW:
         lock_post_description: "阻止發文者編輯此貼文"
         unlock_post: "解鎖貼文"
         unlock_post_description: "允許發文者編輯此貼文"
-        delete_topic_disallowed_modal: "您無權刪除此主題。如果您確實希望將其刪除，請提交舉報並說明原因，以便引起版主注意。"
+        delete_topic_disallowed_modal: "您無權刪除此主題。如果您確實希望將其刪除，請提交檢舉並說明原因，以便引起版主注意。"
         delete_topic_disallowed: "您無權刪除此主題"
         delete_topic_confirm_modal:
           other: "此主題目前有超過 %{count} 次瀏覽，可能是熱門搜尋目標。確定要完全刪除此主題，而不是對其進行編輯以改進它嗎？"
@@ -4100,13 +4100,13 @@ zh_TW:
           read_capped:
             other: "還有其他 %{count} 人閱讀了此貼文"
         by_you:
-          off_topic: "您將此貼文舉報為偏離主題"
-          spam: "您將此貼文舉報為垃圾訊息"
-          inappropriate: "您將此貼文舉報為不當言論"
-          illegal: "您已將此貼文舉報為非法內容"
-          notify_moderators: "您將此貼文舉報為需要由版主審核"
+          off_topic: "您將此貼文檢舉為偏離主題"
+          spam: "您將此貼文檢舉為垃圾訊息"
+          inappropriate: "您將此貼文檢舉為不當言論"
+          illegal: "您已將此貼文檢舉為非法內容"
+          notify_moderators: "您將此貼文檢舉為需要由版主審核"
           notify_user: "您向此使用者傳送了一則訊息"
-          custom: "您已將此主題舉報為 %{custom}"
+          custom: "您已將此主題檢舉為 %{custom}"
       delete:
         confirm:
           other: "確定要刪除這 %{count} 則貼文嗎？"
@@ -4430,23 +4430,23 @@ zh_TW:
         none: "無子類別"
       colors_disabled: "您無法選擇顏色，因為您的「類別樣式」設定為「無」。"
     anonymous_flagging:
-      title: "舉報非法內容"
-      description: "若要舉報非法內容，請聯繫 <a href='mailto:%{email}?subject=Illegal content: %{topic_title}&body=This post %{url} contains illegal content.'>%{email}</a>"
+      title: "檢舉非法內容"
+      description: "若要檢舉非法內容，請聯繫 <a href='mailto:%{email}?subject=Illegal content: %{topic_title}&body=This post %{url} contains illegal content.'>%{email}</a>"
     flagging:
       title: "感謝您維護社群的文明！"
-      review_process_description: "工作人員收到舉報後將儘快進行審核。"
-      action: "舉報貼文"
+      review_process_description: "工作人員收到檢舉後將儘快進行審核。"
+      action: "檢舉貼文"
       take_action: "採取行動…"
       take_action_options:
         default:
           title: "隱藏貼文"
-          details: "立即達到舉報門檻並隱藏貼文，同時同意所有待處理的舉報"
+          details: "立即達到檢舉門檻並隱藏貼文，同時同意所有待處理的檢舉"
         suspend:
           title: "封鎖使用者"
-          details: "立即達到舉報門檻，並封鎖該使用者"
+          details: "立即達到檢舉門檻，並封鎖該使用者"
         silence:
           title: "禁言使用者"
-          details: "立即達到舉報門檻，並禁言該使用者"
+          details: "立即達到檢舉門檻，並禁言該使用者"
       notify_action: "訊息"
       official_warning: "官方警告"
       delete_spammer: "刪除垃圾訊息發送者"
@@ -4456,9 +4456,9 @@ zh_TW:
       yes_delete_spammer: "是，刪除垃圾訊息發送者"
       ip_address_missing: "（不適用）"
       hidden_email_address: "（已隱藏）"
-      submit_tooltip: "提交不公開舉報"
-      take_action_tooltip: "立即達到舉報門檻並隱藏貼文，同時同意所有待處理的舉報"
-      cant: "抱歉，您目前無法舉報此貼文。"
+      submit_tooltip: "提交不公開檢舉"
+      take_action_tooltip: "立即達到檢舉門檻並隱藏貼文，同時同意所有待處理的檢舉"
+      cant: "抱歉，您目前無法檢舉此貼文。"
       notify_staff: "私下通知工作人員"
       formatted_name:
         off_topic: "偏離主題"
@@ -4480,7 +4480,7 @@ zh_TW:
           other: "剩餘 %{count} 個字元"
     flagging_topic:
       title: "感謝您維護社群的文明！"
-      action: "舉報主題"
+      action: "檢舉主題"
       notify_action: "訊息"
     topic_map:
       title: "主題總結"
@@ -4532,7 +4532,7 @@ zh_TW:
         title: "此主題是一則個人訊息"
         help: "此主題是一則個人訊息"
       visibility_reasons:
-        op_flag_threshold_reached: "此主題已被自動取消公開，因為它已達到舉報門檻"
+        op_flag_threshold_reached: "此主題已被自動取消公開，因為它已達到檢舉門檻"
         op_unhidden: "此主題由作者重新公開"
         embedded_topic: "此主題已被重新公開，因為它是嵌入式主題"
         manually_unlisted: "此主題已被管理員或版主手動取消公開"
@@ -4777,7 +4777,7 @@ zh_TW:
         reply_post: "%{shortcut} 回覆貼文"
         quote_post: "%{shortcut} 引用貼文"
         like: "%{shortcut} 按讚貼文"
-        flag: "%{shortcut} 舉報貼文"
+        flag: "%{shortcut} 檢舉貼文"
         bookmark: "%{shortcut} 將貼文加入書籤"
         edit: "%{shortcut} 編輯貼文"
         delete: "%{shortcut} 刪除貼文"
@@ -5206,7 +5206,7 @@ zh_TW:
               other: "%{count} 個草稿"
             review:
               content: "審核"
-              title: "被舉報的貼文和其他排隊的項目"
+              title: "被檢舉的貼文和其他排隊的項目"
               pending_count:
                 other: "%{count} 個待處理"
             invite:
@@ -5422,7 +5422,7 @@ zh_TW:
     admin:
       title: "Discourse 管理員"
       moderator: "版主"
-      filter_reports: "篩選舉報…"
+      filter_reports: "篩選檢舉…"
       filter_reports_no_results: "沒有符合您的篩選條件的報告"
       tags:
         remove_muted_tags_from_latest:
@@ -5551,8 +5551,8 @@ zh_TW:
           header_description: "新增可供所有人使用的新表情符號。選擇多個檔案，使用其檔名建立表情符號。所選群組將用於同時新增的所有檔案"
         flags:
           title: "審核"
-          header_description: "Discourse 中的舉報系統可幫助您和您的版主團隊管理內容和使用者行為，使您的社群保持尊重和健康。預設設定適用於大多數社群，您無需變更它們。但是，如果您的網站有特殊需求，您可以停用不需要的舉報並新增您自己的自訂舉報。"
-          keywords: "舉報|評論|垃圾訊息|非法"
+          header_description: "Discourse 中的檢舉系統可幫助您和您的版主團隊管理內容和使用者行為，使您的社群保持尊重和健康。預設設定適用於大多數社群，您無需變更它們。但是，如果您的網站有特殊需求，您可以停用不需要的檢舉並新增您自己的自訂檢舉。"
+          keywords: "檢舉|評論|垃圾訊息|非法"
         files:
           title: "檔案"
           header_description: "控制檔案大小與類型限制、頭像大小與來源、檔案儲存、圖片品質和壓縮等的設定"
@@ -5838,7 +5838,7 @@ zh_TW:
           header_description: "建立自訂使用者欄位以收集有關社群成員的額外詳細資訊。您可以選擇在註冊時需要哪些資訊、個人資料上顯示哪些內容以及使用者可以更新哪些資訊。"
         watched_words:
           title: "關注詞"
-          header_description: "關注詞是一種審核工具，可以執行多種不同的操作，包括封鎖、審查、連結或舉報包含某些詞的貼文"
+          header_description: "關注詞是一種審核工具，可以執行多種不同的操作，包括封鎖、審查、連結或檢舉包含某些詞的貼文"
         color_palettes:
           title: "配色盤"
           header_description: "這些配色盤控制整個社群使用的顏色。當您將配色盤設定為可供使用者選擇時，成員可以從他們的偏好設定中選擇首選顏色。"
@@ -6446,7 +6446,7 @@ zh_TW:
           legal: "法律資訊"
           moderation_flags:
             title: "審核"
-            keywords: "舉報|審核"
+            keywords: "檢舉|審核"
       appearance:
         title: "外觀"
         sidebar_link:
@@ -6545,37 +6545,37 @@ zh_TW:
             extra_groups_saved: "群組列表已儲存"
           saved: "已儲存！"
         flags:
-          edit_header: "編輯舉報"
+          edit_header: "編輯檢舉"
           description: "描述"
           enabled: "已啟用？"
-          add: "加入舉報"
+          add: "加入檢舉"
           edit: "編輯"
-          back: "返回舉報"
+          back: "返回檢舉"
           delete: "刪除"
           delete_confirm: '確定要刪除「%{name}」嗎？'
-          flags_tab: "舉報"
-          settings: "舉報設定"
+          flags_tab: "檢舉"
+          settings: "檢舉設定"
           form:
-            add_header: "加入舉報"
-            edit_header: "編輯舉報"
+            add_header: "加入檢舉"
+            edit_header: "編輯檢舉"
             save: "儲存"
             name: "名稱"
             description: "描述"
-            applies_to: "將此舉報顯示於"
+            applies_to: "將此檢舉顯示於"
             invalid_applies_to: "必選"
             topic: "主題"
             post: "貼文"
             chat_message: "聊天訊息"
-            enabled: "儲存後啟用此自訂舉報"
-            create_warning: "自訂舉報一旦使用，只能停用或編輯，而無法刪除。"
-            edit_warning: "編輯舉報的名稱和描述可能會導致數據不一致。自訂舉報一旦使用，只能停用或編輯，而無法刪除。"
-            edit_flag: "編輯舉報"
-            non_editable: "您無法編輯此舉報，因為它是系統舉報或已在審核系統中使用，但您仍然可以將其停用。"
-            delete_flag: "刪除舉報"
-            non_deletable: "您無法刪除此舉報，因為它是系統舉報或已在審核系統中使用，但您仍然可以將其停用。"
+            enabled: "儲存後啟用此自訂檢舉"
+            create_warning: "自訂檢舉一旦使用，只能停用或編輯，而無法刪除。"
+            edit_warning: "編輯檢舉的名稱和描述可能會導致數據不一致。自訂檢舉一旦使用，只能停用或編輯，而無法刪除。"
+            edit_flag: "編輯檢舉"
+            non_editable: "您無法編輯此檢舉，因為它是系統檢舉或已在審核系統中使用，但您仍然可以將其停用。"
+            delete_flag: "刪除檢舉"
+            non_deletable: "您無法刪除此檢舉，因為它是系統檢舉或已在審核系統中使用，但您仍然可以將其停用。"
             require_message: "提示使用者提供更多原因"
-            require_message_description: "選擇此舉報後，將顯示一個文字欄位，供使用者提供更多詳細資訊來說明舉報內容的原因"
-            auto_action_type: "自動隱藏被舉報的內容"
+            require_message_description: "選擇此檢舉後，將顯示一個文字欄位，供使用者提供更多詳細資訊來說明檢舉內容的原因"
+            auto_action_type: "自動隱藏被檢舉的內容"
           more_options:
             title: "更多選項"
             move_up: "上移"
@@ -7401,11 +7401,11 @@ zh_TW:
             create_watched_word_group: "建立關注詞群組"
             update_watched_word_group: "更新關注詞群組"
             delete_watched_word_group: "刪除關注詞群組"
-            toggle_flag: "切換舉報"
-            move_flag: "移動舉報"
-            create_flag: "建立舉報"
-            update_flag: "更新舉報"
-            delete_flag: "刪除舉報"
+            toggle_flag: "切換檢舉"
+            move_flag: "移動檢舉"
+            create_flag: "建立檢舉"
+            update_flag: "更新檢舉"
+            delete_flag: "刪除檢舉"
             topic_slow_mode_set: "將主題置於慢速模式"
             topic_slow_mode_removed: "移除主題慢速模式"
             custom_emoji_create: "建立自訂表情符號"
@@ -7465,7 +7465,7 @@ zh_TW:
           title: "錯誤日誌"
       watched_words:
         title: "關注詞"
-        description: "關注詞是一種審核工具，可以執行多種不同的操作，包括封鎖、審查、連結或舉報包含某些詞的貼文"
+        description: "關注詞是一種審核工具，可以執行多種不同的操作，包括封鎖、審查、連結或檢舉包含某些詞的貼文"
         search: "搜尋"
         clear_filter: "清除"
         show_words:
@@ -7482,7 +7482,7 @@ zh_TW:
           block: "禁止"
           censor: "審查"
           require_approval: "需要核准"
-          flag: "舉報"
+          flag: "檢舉"
           replace: "替換"
           tag: "標籤"
           silence: "禁言"
@@ -7491,7 +7491,7 @@ zh_TW:
           block: "試圖建立包含這些字詞的貼文時，將顯示一則錯誤訊息。"
           censor: "允許包含這些字詞的貼文，但將其替換為隱藏敏感字詞的字元。"
           require_approval: "包含這些字詞的貼文需要工作人員核准後才能被其他人看到。"
-          flag: "允許包含這些字詞的貼文，但將它們舉報為不當言論以供版主審核。"
+          flag: "允許包含這些字詞的貼文，但將它們檢舉為不當言論以供版主審核。"
           replace: "使用其他字詞替換貼文中的字詞。"
           tag: "如果第一則貼文包含特定字詞，則自動為主題標記標籤。"
           silence: "如果新帳號的第一則貼文包含這些字詞，則將其禁言。該貼文將被自動隱藏，直到工作人員核准。"
