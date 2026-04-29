@@ -231,9 +231,9 @@ zh_TW:
         topic_not_found_error: "當收到回覆但相關主題已被刪除時，就會發生這種情況。"
         topic_closed_error: "當收到回覆但相關主題已被關閉時，就會發生這種情況。"
         bounced_email_error: "電子郵件是退回的電子郵件報告。"
-        screened_email_error: "當寄件者的電子郵件地址已被屏蔽時，就會發生這種情況。"
+        screened_email_error: "當寄件者的電子郵件地址已被封鎖時，就會發生這種情況。"
         unsubscribe_not_allowed: "當不允許此使用者透過電子郵件退訂時，就會發生這種情況。"
-        email_not_allowed: "當電子郵件地址不在許可清單中或位於屏蔽清單中時，就會發生這種情況。"
+        email_not_allowed: "當電子郵件地址不在許可清單中或位於封鎖清單中時，就會發生這種情況。"
       unrecognized_error: "無法識別的錯誤"
     secure_uploads_placeholder: "已編輯：此網站已啟用安全上傳，請瀏覽主題或點擊「查看媒體」以查看附加的上傳內容。"
     view_redacted_media: "查看媒體"
@@ -1561,7 +1561,7 @@ zh_TW:
       force_https: "您的網站正在使用 SSL。但是，`<a href='%{base_path}/admin/site_settings/category/all_results?filter=force_https'>force_https</a>` 尚未在您的網站設定中啟用。"
       out_of_date_themes: "以下佈景主題有可用更新：%{themes_list}"
       unreachable_themes: "我們無法檢查以下佈景主題的更新：%{themes_list}"
-      watched_words: "%{action}監控詞的規則運算式無效。請檢查您的 <a href='%{base_path}/admin/customize/watched_words'>監控詞設定</a>，或停用 'watched words regular expressions' 網站設定。"
+      watched_words: "%{action}監控詞的正規表示式無效。請檢查您的 <a href='%{base_path}/admin/customize/watched_words'>監控詞設定</a>，或停用 'watched words regular expressions' 網站設定。"
       google_analytics_version: "您的 Discourse 目前使用的是 Google Analytics（分析）3，2023 年 7 月後該版本將不受支援。立即 <a href='https://meta.discourse.org/t/260498'>升級到 Google Analytics（分析）4</a>，以繼續接收針對您的網站表現的有價值見解和分析。"
       category_style_deprecated: "您的 Discourse 目前使用的是過時的類別樣式，該樣式將在 Discourse 3.2 最終測試版發佈前移除。請參閱 <a href='https://meta.discourse.org/t/282441'>遷移至單一類別樣式網站設定</a>，了解如何保留所選類別樣式。"
       maxmind_db_configuration: '伺服器已被配置為使用 MaxMind 資料庫進行反向 IP 查找，但尚未配置有效的 MaxMind 帳號 ID，這可能導致 MaxMind 資料庫將來無法下載。<a href="https://meta.discourse.org/t/configure-maxmind-for-reverse-ip-lookups/173941" target="_blank">請參閱本指南了解更多詳情</a>。'
@@ -1739,7 +1739,7 @@ zh_TW:
     moderators_change_post_ownership: "允許板主變更貼文所有權"
     change_post_ownership_allowed_groups: "允許這些群組中的使用者變更貼文所有權"
     cors_origins: "允許跨來源請求（CORS）。每個來源必須包括 http:// 或 https://。環境變數 DISCOURSE_ENABLE_CORS 必須設定為 true 才能啟用 CORS。"
-    use_admin_ip_allowlist: "只有使用「屏蔽的 IP 列表」（管理 > 日誌 > 屏蔽的 IP）中的 IP 地址時，管理員才能登入。"
+    use_admin_ip_allowlist: "只有使用「封鎖的 IP 列表」（管理 > 日誌 > 封鎖的 IP）中的 IP 地址時，管理員才能登入。"
     blocked_ip_blocks: "Discourse 不應抓取的私有 IP 地址段列表"
     allowed_internal_hosts: "Discourse 可以安全抓取用於 Onebox 處理和其他目的的內部主機列表"
     allowed_onebox_iframes: "通過 Onebox 嵌入允許的 iframe src 網域列表 `*` 將允許所有預設的 Onebox 引擎。"
@@ -1804,7 +1804,7 @@ zh_TW:
     min_username_length: "使用者名稱最短長度（字元）。警告：如果任何現有使用者或群組名稱的長度短於此數值，您的網站將無法正常運作！"
     max_username_length: "使用者名稱最長長度（字元）。警告：如果任何現有使用者或群組名稱的長度長於此數值，您的網站將無法正常運作！"
     unicode_usernames: "允許使用者名稱和群組名稱包含 Unicode 字母和數字"
-    allowed_unicode_username_characters: "僅在使用者名稱中允許特定 Unicode 字元的規則運算式。ASCII 字母和數字將一律允許，不需要包含在許可清單中"
+    allowed_unicode_username_characters: "僅在使用者名稱中允許特定 Unicode 字元的正規表示式。ASCII 字母和數字將一律允許，不需要包含在許可清單中"
     reserved_usernames: "不允許註冊的使用者名稱。萬用字元 * 可用於比對任何字元零次或多次。"
     min_password_length: "定義網站上使用者密碼所需的最少字元數。過低的值可能會讓未經授權的人員更容易猜到密碼，進而影響安全性；而過高的值則可能會讓使用者更難記住密碼。"
     min_admin_password_length: "指定管理員使用者密碼的最小長度。這可以確保所有管理員密碼都滿足一定的長度要求，以增強安全性。此設定對於保護管理員帳號免受潛在的未經授權存取至關重要。"
@@ -2055,8 +2055,8 @@ zh_TW:
     levenshtein_distance_spammer_emails: "在比對垃圾訊息發布者電子郵件時，仍然允許模糊比對的字元數差異。"
     max_new_accounts_per_registration_ip: "如果已經有 (n) 個來自此 IP 的信任層級 0 帳號（並且沒有一個是管理人員或者是 TL2 或更高等級），則停止接受來自該 IP 的新註冊。設為 0 將停用限制。"
     min_ban_entries_for_roll_up: "點擊「彙總」按鈕時，如果至少有 (N) 個條目，將建立一個子網段禁止條目"
-    max_age_unmatched_emails: "在 (N) 天後刪除不相符的已屏蔽電子郵件條目。"
-    max_age_unmatched_ips: "在 (N) 天後刪除不相符的已屏蔽 IP 條目。"
+    max_age_unmatched_emails: "在 (N) 天後刪除不相符的已封鎖電子郵件條目。"
+    max_age_unmatched_ips: "在 (N) 天後刪除不相符的已封鎖 IP 條目。"
     num_flaggers_to_close_topic: "自動暫停主題以進行干預所需的最少唯一檢舉次數"
     num_hours_to_close_topic: "暫停主題以進行干預的小時數。"
     auto_respond_to_flag_actions: "處理檢舉時啟用自動回覆。"
@@ -2064,7 +2064,7 @@ zh_TW:
     fast_typing_threshold: "使用者在第一次發文時必須輸入的最短時間。如果未達到門檻，貼文將自動進入審核佇列。最短時間為 1 秒，標準時間為 3 秒，最長時間為 5 秒。"
     auto_silence_fast_typers_on_first_post: "自動禁言未達到 `fast typing threshold` 的使用者"
     auto_silence_fast_typers_max_trust_level: "自動禁言輸入過快使用者的最高信任層級"
-    auto_silence_first_post_regex: "檢查使用者第一個貼文的大小寫不相關規則運算式。如相符，使用者將被禁言並送至審核佇列。範例：raging|a[bc]a 將比對包含 raging、aba 或者 aca 的所有貼文，因此該使用者將被禁言。只對第一個貼文有效。已棄用：改用「禁言監控詞」。"
+    auto_silence_first_post_regex: "檢查使用者第一個貼文的大小寫不相關正規表示式。如相符，使用者將被禁言並送至審核佇列。範例：raging|a[bc]a 將比對包含 raging、aba 或者 aca 的所有貼文，因此該使用者將被禁言。只對第一個貼文有效。已棄用：改用「禁言監控詞」。"
     moderator_guide_topic: "概述您如何管理您的社群的主題。連結將在審核佇列中顯示，供板主和管理員使用。"
     reviewable_claiming: "可審核的內容是否需要先聲明（認領）然後再對其採取行動？"
     reviewable_default_topics: "預設顯示按主題分組的可審核內容"
@@ -2107,8 +2107,8 @@ zh_TW:
     hard_bounce_score: "發生永久退信時，向使用者增加的退信分數。"
     bounce_score_threshold: "在我們停止向使用者發送電子郵件之前、最大的退信分數門檻。"
     reset_bounce_score_after_days: "X 天後自動重設退信分數。"
-    blocked_attachment_content_types: "用於根據內容類型屏蔽附件的關鍵字清單。"
-    blocked_attachment_filenames: "用於根據檔名屏蔽清單附件的關鍵字清單。"
+    blocked_attachment_content_types: "用於根據內容類型封鎖附件的關鍵字清單。"
+    blocked_attachment_filenames: "用於根據檔名封鎖清單附件的關鍵字清單。"
     forwarded_emails_behaviour: "如何處理轉寄給 Discourse 的電子郵件。<a href='https://meta.discourse.org/t/-/62977' target='_blank'>了解詳情</a>"
     always_show_trimmed_content: "始終顯示傳入電子郵件被修剪的部分。警告：可能會洩露電子郵件地址。"
     trim_incoming_emails: "修剪傳入電子郵件的不相關部分。"
@@ -2199,7 +2199,7 @@ zh_TW:
     pm_warn_user_last_seen_months_ago: "建立新私訊時，如果目標接收者自超過 n 個月前無活動，則警告使用者。"
     suppress_uncategorized_badge: "不在主題列表中顯示未分類主題的徽章。"
     header_dropdown_category_count: "標題下拉選單中可以顯示的類別數量。"
-    permalink_normalizations: "在比對永久連結之前套用以下規則運算式，例如：/(topic.*)\\?.*/\\1 將從主題路由中去除查詢字串。格式為規則運算式+字串。使用 \\1 等存取擷取"
+    permalink_normalizations: "在比對永久連結之前套用以下正規表示式，例如：/(topic.*)\\?.*/\\1 將從主題路由中去除查詢字串。格式為正規表示式+字串。使用 \\1 等存取擷取"
     global_notice: "向所有訪客顯示緊急、突發、不可忽略的全站橫幅通知，變更為空將隱藏（允許使用 HTML）。"
     disable_system_edit_notifications: "當 'download_remote_images_to_local' 啟用時停用系統使用者的編輯通知。"
     disable_category_edit_notifications: "停用主題編輯的通知。包括「已發布」的主題（例如，共享草稿）。"
@@ -2269,7 +2269,7 @@ zh_TW:
     code_formatting_style: "編輯器中的代碼按鈕將預設為此代碼格式樣式"
     max_allowed_message_recipients: "訊息中允許的最大收件人數。"
     disable_watched_word_checking_in_user_fields: "在使用者欄位中停用監控詞檢查"
-    watched_words_regular_expressions: "允許使用規則運算式篩選字詞。如果啟用，它會根據字詞的大小寫將敏感詞分組。然後，它將所有選定字詞編譯成一個單一的規則運算式，並為一般監控詞添加字詞邊界。因此，這種基於規則運算式的篩選方法通過支援更複雜的字詞模式，對內容審核增加了一層額外控制。該設定還允許輕鬆地使用選擇的替換文字替換原始文字。"
+    watched_words_regular_expressions: "允許使用正規表示式篩選字詞。如果啟用，它會根據字詞的大小寫將敏感詞分組。然後，它將所有選定字詞編譯成一個單一的正規表示式，並為一般監控詞添加字詞邊界。因此，這種基於正規表示式的篩選方法通過支援更複雜的字詞模式，對內容審核增加了一層額外控制。該設定還允許輕鬆地使用選擇的替換文字替換原始文字。"
     enable_fast_edit: "在貼文選擇選單中添加一個按鈕以內聯編輯小部分內容。"
     old_post_notice_days: "新使用者和回訪使用者發布通知後隱藏的天數。官方貼文通知將始終可見。"
     new_user_notice_tl: "查看新使用者貼文通知所需的最低信任層級。"
@@ -2470,8 +2470,8 @@ zh_TW:
       email_polling_disabled: "您必須先啟用手動、POP3 輪詢或啟用自訂郵件輪詢器，然後才能透過電子郵件進行回覆。"
       user_locale_not_enabled: "在啟用此設定之前，您必須先啟用 'allow user locale'。"
       at_least_one_group_required: "您必須為此設定至少指定一個群組。"
-      invalid_regex: "規則運算式無效或不被允許。"
-      invalid_regex_with_message: "規則運算式 '%{regex}' 有一個錯誤：%{message}"
+      invalid_regex: "正規表示式無效或不被允許。"
+      invalid_regex_with_message: "正規表示式 '%{regex}' 有一個錯誤：%{message}"
       email_editable_enabled: "在啟用此設定之前，您必須先停用 'email editable'。"
       staged_users_disabled: "在啟用此設定之前，您必須先啟用 'staged users'。"
       reply_by_email_disabled: "在啟用此設定之前，您必須先啟用 'reply by email'。"
@@ -2489,8 +2489,8 @@ zh_TW:
         low_weight_invalid: "您不能將權重設定為大於或等於 1。"
         high_weight_invalid: "您不能將權重設定為小於或等於 1。"
       allowed_unicode_usernames:
-        regex_invalid: "規則運算式無效：%{error}"
-        leading_trailing_slash: "規則運算式不得以斜槓作開頭或結尾。"
+        regex_invalid: "正規表示式無效：%{error}"
+        leading_trailing_slash: "正規表示式不得以斜槓作開頭或結尾。"
       unicode_usernames_avatars: "內部系統大頭貼不支援 Unicode 使用者名稱。"
       list_value_count:
         other: "該列表必須恰好包含 %{count} 個值。"
@@ -2787,7 +2787,7 @@ zh_TW:
       other: "已在閒置 %{count} 天後被自動停用"
     activated_by_staff: "被管理人員啟動"
     new_user_typed_too_fast: "新使用者輸入過快"
-    content_matches_auto_silence_regex: "內容符合自動禁言的規則運算式"
+    content_matches_auto_silence_regex: "內容符合自動禁言的正規表示式"
     username:
       short:
         other: "必須至少為 %{count} 個字元"
@@ -3335,7 +3335,7 @@ zh_TW:
 
         您的回覆發送自未知電子郵件地址。嘗試從其他電子郵件地址發送，或者[聯繫工作人員](%{base_url}/about)。
     email_reject_screened_email:
-      title: "電子郵件被拒：被屏蔽的電子郵件"
+      title: "電子郵件被拒：被封鎖的電子郵件"
       subject_template: "[%{email_prefix}] 電子郵件問題 - 被禁止的電子郵件"
       text_body_template: |
         抱歉，但是您向 %{destination}（名為 %{former_title}）發送的電子郵件未成功。
@@ -3619,12 +3619,12 @@ zh_TW:
 
         此門檻可以透過 `silence_new_user` 網站設定進行變更。
     spam_post_blocked:
-      title: "垃圾訊息貼文被屏蔽"
-      subject_template: "新使用者 %{username} 的貼文因重複連結被屏蔽"
+      title: "垃圾訊息貼文被封鎖"
+      subject_template: "新使用者 %{username} 的貼文因重複連結被封鎖"
       text_body_template: |
         這是一封自動發送的郵件。
 
-        新使用者 [%{username}](%{user_url}) 嘗試建立多個帶有指向 %{domains} 連結的貼文，但這些貼文被屏蔽以避免垃圾訊息。該使用者仍然可以建立未連結到 %{domains} 的新貼文。
+        新使用者 [%{username}](%{user_url}) 嘗試建立多個帶有指向 %{domains} 連結的貼文，但這些貼文被封鎖以避免垃圾訊息。該使用者仍然可以建立未連結到 %{domains} 的新貼文。
 
         請[審核使用者](%{user_url})。
 
@@ -5324,13 +5324,13 @@ zh_TW:
         complete: "使用者已被刪除"
         reason: "已透過審核佇列刪除 "
       delete_and_block_user:
-        title: "刪除並屏蔽"
-        description: "刪除該使用者並屏蔽其 IP /電子郵件地址"
-        complete: "使用者已被刪除並屏蔽"
+        title: "刪除並封鎖"
+        description: "刪除該使用者並封鎖其 IP /電子郵件地址"
+        complete: "使用者已被刪除並封鎖"
       delete_user_block:
-        title: "刪除並屏蔽 "
-        description: "刪除該使用者並屏蔽其 IP /電子郵件地址 "
-        complete: "使用者已被刪除並屏蔽 "
+        title: "刪除並封鎖 "
+        description: "刪除該使用者並封鎖其 IP /電子郵件地址 "
+        complete: "使用者已被刪除並封鎖 "
   email_style:
     html_missing_placeholder: "HTML 範本必須包含 %{placeholder}"
   notification_level:
@@ -5361,7 +5361,7 @@ zh_TW:
       ends_at_should_be_greater_than_set_at: "結束時間 (ends_at) 應該大於設定時間 (set_at) "
   webhooks:
     payload_url:
-      blocked_or_internal: "無法使用有效負載 URL，因為它解析為被屏蔽的 IP 或內部 IP "
+      blocked_or_internal: "無法使用有效負載 URL，因為它解析為被封鎖的 IP 或內部 IP "
       unsafe: "無法使用有效負載 URL，因為它不安全 "
   form_templates:
     errors:
