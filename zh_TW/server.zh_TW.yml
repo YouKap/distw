@@ -249,10 +249,10 @@ zh_TW:
       taken: "已被佔用"
       reserved: "%{name} 群組名稱已預留，請選擇其他名稱"
       accepted: 必須被接受
-      blank: 不能为空
+      blank: 不能爲空
       present: 必須為空
       confirmation: ! "與 %{attribute} 不符"
-      empty: 不能为空
+      empty: 不能爲空
       equal_to: 必須等於 %{count}
       even: 必須為偶數
       exclusion: 被保留
